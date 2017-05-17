@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="br.com.felipe.estudofatecmanager.view.MainActivity">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+
+        <variable name="config" type="br.com.felipe.estudofatecmanager.controller.Config"/>
+    </data>
 
     <LinearLayout
         android:layout_width="368dp"
@@ -26,20 +28,21 @@
             android:id="@+id/lvMaterias"
             android:layout_width="match_parent"
             android:layout_height="44dp"
-            android:layout_weight="0.96"
-            android:visibility="visible" />
+            android:layout_weight="0.96" />
 
         <Button
             android:id="@+id/btnNovaMateria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Adicionar Matéria" />
+            android:text="Adicionar Matéria"
+            android:visibility="@{config.ADM ? View.VISIBLE : View.GONE }" />
 
         <Button
             android:id="@+id/btnAtualizarLista"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Atualizar" />
+            android:text="Atualizar"
+            android:visibility="@{config.ADM ? View.VISIBLE : View.GONE }" />
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+</layout>

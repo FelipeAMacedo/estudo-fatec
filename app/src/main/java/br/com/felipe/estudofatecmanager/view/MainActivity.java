@@ -1,6 +1,7 @@
 package br.com.felipe.estudofatecmanager.view;
 
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,8 +16,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.felipe.estudofatecmanager.R;
+import br.com.felipe.estudofatecmanager.controller.Config;
 import br.com.felipe.estudofatecmanager.controller.adapter.MateriaAdapter;
 import br.com.felipe.estudofatecmanager.controller.listener.firebase.MateriaEventListener;
+import br.com.felipe.estudofatecmanager.databinding.ActivityMainBinding;
 import br.com.felipe.estudofatecmanager.model.Materia;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        Config config = new Config();
+        binding.setConfig(config);
         initComponents();
         initListeners();
     }
