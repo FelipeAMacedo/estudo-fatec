@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="br.com.felipe.estudofatecmanager.view.AddMateriaActivity">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        android:orientation="vertical"
+        android:paddingLeft="200px"
+        android:paddingRight="200px"
+        android:paddingTop="80px"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome da matéria"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="31dp" />
+
+        <EditText
+            android:id="@+id/etNomeMateria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="57dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lista de Unidades"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="115dp" />
+
+        <ListView
+            android:id="@+id/lvUnidades"
+            android:layout_width="match_parent"
+            android:layout_height="169dp" />
+
+        <Button
+            android:id="@+id/btnNovaUnidade"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02"
+            android:elevation="16dp"
+            android:text="Nova Unidade" />
+
+        <Button
+            android:id="@+id/btnSalvarMateria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

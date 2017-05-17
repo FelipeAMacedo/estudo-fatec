@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "500597279802",
+    "firebase_url": "https://estudo-fatec.firebaseio.com",
+    "project_id": "estudo-fatec",
+    "storage_bucket": "estudo-fatec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500597279802:android:f9300a6aaddc568e",
+        "android_client_info": {
+          "package_name": "com.felipe.estudofatec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500597279802-l6ki388oe9cs050da9ep408ha49kr01q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.felipe.estudofatec",
+            "certificate_hash": "ba36fe70c6352779f2ea31fcec3ef036d51ec794"
+          }
+        },
+        {
+          "client_id": "500597279802-3iulrfcnc99qdaseoaqtah3omjcvfjmo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjnGnbxs0TgYLHoTU8CgSoMIQpGQgk75g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500597279802-3iulrfcnc99qdaseoaqtah3omjcvfjmo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500597279802:android:bddb8ee066d27244",
+        "android_client_info": {
+          "package_name": "br.com.felipe.estudofatecmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500597279802-fi8ncjqdkt0mtvff6pf89muij561nc9f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.felipe.estudofatecmanager",
+            "certificate_hash": "ba36fe70c6352779f2ea31fcec3ef036d51ec794"
+          }
+        },
+        {
+          "client_id": "500597279802-3iulrfcnc99qdaseoaqtah3omjcvfjmo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjnGnbxs0TgYLHoTU8CgSoMIQpGQgk75g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500597279802-3iulrfcnc99qdaseoaqtah3omjcvfjmo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500597279802:android:898919565e7ecf0a",
+        "android_client_info": {
+          "package_name": "com.example.famac.testeinsertfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500597279802-3iulrfcnc99qdaseoaqtah3omjcvfjmo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjnGnbxs0TgYLHoTU8CgSoMIQpGQgk75g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

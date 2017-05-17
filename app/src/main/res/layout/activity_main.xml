@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.felipe.estudofatecmanager.view.MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Matérias"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ListView
+            android:id="@+id/lvMaterias"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="0.96"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnNovaMateria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adicionar Matéria" />
+
+        <Button
+            android:id="@+id/btnAtualizarLista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atualizar" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
