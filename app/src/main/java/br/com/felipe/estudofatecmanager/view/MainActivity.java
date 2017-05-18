@@ -5,6 +5,8 @@ import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
@@ -26,19 +28,15 @@ public class MainActivity extends AppCompatActivity {
 
     private ListView lvMaterias;
     private Button btnNovaMateria;
-//    private ArrayAdapter<Materia> materiasAdapter;
     private MateriaAdapter materiasAdapter;
     private List<Materia> listaMaterias = new ArrayList<>();
     private Button btnAtualizarLista;
-//    private LinearLayout llMaterias;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
-        ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-        Config config = new Config();
-        binding.setConfig(config);
         initComponents();
         initListeners();
     }
@@ -51,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initComponents() {
+        dataBindingConfig();
+
         btnNovaMateria = (Button) findViewById(R.id.btnNovaMateria);
         btnAtualizarLista = (Button) findViewById(R.id.btnAtualizarLista);
 
@@ -87,6 +87,11 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void dataBindingConfig() {
+        ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        binding.setConfig(new Config());
     }
 
     private void populateList() {

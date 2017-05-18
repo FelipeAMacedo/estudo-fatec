@@ -57,6 +57,10 @@ public class AddMateriaActivity extends AppCompatActivity {
         materia          =  initMateria();
 
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+
         etNomeMateria.setText(materia.getTitulo());
 
 
